@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------nav bar--------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+   
+}
+ul{
+    
+    position:fixed;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    background: white;
+    opacity: 95%;
+    z-index: 100;
+    
+}
+.dropdown{
+    flex-direction: column;
+}
+.primary ul{
+    display: none;
+    line-height: 30px;
+    opacity: 100%;
+    background: white;
+    width: 25%;
+    line-height: 60px;
+}
+.primary li:hover >ul{
+    display: block;
+}
+ul ul li li{
+    margin-left: 300px;
+    margin-top: -29px;
+    width: 100%;
+    background-color: white;
+    padding: 2px;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    padding:12px;
+    color: black;
+}
+.navbar a:hover{
+    color:rgba(32, 151, 82, 0.89);
+    border-bottom:2px solid rgba(32, 151, 82, 0.89);
+}
+
+
+
+
+/*-----background----*/
+
+.main{
+    background-image: url("bg1.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 41rem;
+    z-index: -3;
+    
+}
+
+#color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+ }
+
+
+.h{
+    padding-top: 15rem;
+}
+.main h1,h3{
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 40px; 
+    color: white;
+    padding-left: 7px;
+}
+
+.help{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.hbtn{
+    padding: 12px;
+    border-radius: 25px;
+    background: rgb(9, 141, 230);
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    position: fixed;
+}
+
+.btn{
+    padding: 12px;
+    border-radius: 6px;
+    margin-left: 35px;
+    background: rgba(32, 151, 82, 0.89);
+    color: white;
+    font-size: 20px;
+}
+.btn:hover{
+    background: rgb(9, 141, 230);
+    cursor: pointer;
+}
+
+
+.info{
+    padding: 1.5em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'KoHo', sans-serif;
+    text-align: center;
+}
+.info-2{
+    background:rgba(32, 151, 82, 0.89);
+    margin-top: 5rem;
+}
+h4{
+    padding: 15px;
+}
+
+/*-----picgrid----*/
+
+#e{
+    text-align: center;
+    height: 2rem;
+    color: rgba(32, 151, 82, 0.89);
+    font-size: 1em;
+    font-weight:bold;
+    margin-top: 12px;
+}
+
+.picgrid{
+    margin: 0 87px;
+}
+.gallery{
+    padding:10px;
+    float: left;
+    margin: 2px 9px;
+    
+    
+}
+.gallery img{
+   width:15rem;
+   height: 10rem;
+   margin-top: 12px;
+   transition: 0.5s;
+   border-radius: 13px;
+   display: flex;
+   justify-content: center;
+   margin: 5px;
+}
+
+.gallery img:hover{
+    transform:scaleY(1.05);
+    
+}
+
+.photogrid-2{
+    margin-top: 10rem;
+}
+
+.desc{
+    text-align: center;
+    background: rgba(32, 151, 82, 0.89);
+    height: 35px;
+    color: white;
+    font-size: 17px;
+    padding-top: 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.desc-2{
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.banner{
+    background-image:  url("banner.jpeg");
+    background-size: cover;
+    height: 25rem;
+    margin:80px 0px 30px 0px;
+    
+}
+
+.banner-2{
+    background-image: url("banner2.jpeg");
+    background-position: center;
+}
+
+.text{
+    background:rgba(32, 151, 82, 0.89);
+    width: 35%;
+    height: 123%;
+    color: white;
+    padding: 5px;
+    margin:-50px 0px auto 80px;
+    font-family: 'Work Sans', sans-serif;
+}
+.text h1{
+    font-size: 3.5em;
+}
+.text h2{
+    font-size: 1.5em;
+    padding: 2px;
+}
+.text h4{
+    font-size: 1.05em;
+    font-weight: lighter;
+    padding: 4px;
+}
+.text-2{
+    color: black;
+    background-color: rgba(139, 218, 150, 0.89);
+}
+.text-2 h2{
+    padding-top: 4rem;
+}
+.text-2 h4{
+padding-top: 4rem;
+}
+
+.info-3{
+    background-color: rgb(12, 102, 204);
+    color: white;
+    font-style: italic;
+}
+.info-3 a{
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-content: space-around;
+    padding-top: 30px;
+    font-size: larger;
+}
+.a{
+    width: 30%;
+    
+}
+.b , .c,  .d{
+    width: 15%;
+}
+
+@media (max-width:670px){
+    ul{
+        flex-direction: column;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .primary li:hover >ul{
+        width: 100%;
+        
+        
+    }
+    ul ul li li{
+        width: 100%;
+        margin:0;
+    }
+    .main{
+        height: 55rem;
+    }
+    #color-overlay{
+        height: 55rem;
+    }
+    .h{
+        padding-top: 30rem;
+    }
+    #info{
+        font-size: 1rem;
+    }
+    #banner{
+        display: none;
+    }
+    .text{
+        width: 100%;
+    }
+}
